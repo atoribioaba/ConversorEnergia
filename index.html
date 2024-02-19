@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calculadora Conversora</title>
+</head>
+
+<body>
+    <h1>CALCULADORA CONVERSORA DE ENERGÍA</h1>
+
+    <form action="#" method="POST" name="formulario" id="formulario">
+      
+        <input type="button" id="limpiar" name="limpiar" value="LIMPIAR">
+        <input type="number" id="valor" name="valor">
+     
+        <p>de
+            <select name="origen" id="origen">
+                <option value="julios">JULIOS (J)</option>
+                <option value="calorias">CALORÍAS (cal)</option>
+                <option value="electronvoltios">ELECTRÓN VOLTIOS (eV)</option>
+                <option value="kilojulios">KILOJULIOS (kJ)</option>
+                <option value="kilocalorias">KILOCALORIAS (kCal)</option>
+                <option value="kilovatioshora">KILOVATIOS-HORA (kWh)</option>
+
+            </select>
+        </p>
+        <input type="button" id="invertir" name="invertir" value="INVERTIR">
+        <p>a
+            <select name="destino" id="destino">
+                <option value="julios">JULIOS (J)</option>
+                <option value="calorias">CALORÍAS (cal)</option>
+                <option value="electronvoltios">ELECTRÓN VOLTIOS (eV)</option>
+                <option value="kilojulios">KILOJULIOS (kJ)</option>
+                <option value="kilocalorias">KILOCALORIAS (kCal)</option>
+                <option value="kilovatioshora">KILOVATIOS-HORA (kWh)</option>
+
+            </select></p>
+
+
+        <input type="button" value="CONVERTIR" name="convertir" id="convertir">
+        <p id="resultado"></p>
+
+    </form>
+    <p id="barra">
+
+        <table>
+            <caption>
+                <b>CUADRO DE CONVERSIÓN DE UNIDADES</b>
+            </caption>
+            <tr>
+                <th>UNIDADES</th>
+                <th>JULIOS</th>
+                <th>CALORÍAS</th>
+                <th>ELECTRONVOLTIOS</th>
+                <th>KILOJULIOS</th>
+                <th>KILOCALORÍAS</th>
+                <th>KILOVATIOS-HORA</th>
+            </tr>
+            <tr>
+                <th>JULIOS</th>
+                <td id="nada"></td>
+                <td>J * 0.2388</td>
+                <td>J * 6,241506363094*10¹⁸</td>
+                <td>J * 0.001</td>
+                <td>J * 0.0002388</td>
+                <td>J * 2,7777777777777776*10⁻⁷</td>
+
+            </tr>
+            <tr>
+                <th>CALORÍAS</th>
+                <td>cal * 4.1868</td>
+                <td id="nada"></td>
+                <td>cal * 2,6131938841002*10¹⁹</td>
+                <td>cal * 0.0041868</td>
+                <td>cal * 0.001</td>
+                <td>cal * 0.000001163</td>
+
+            </tr>
+            <tr>
+                <th>ELECTRONVOLTIOS</th>
+                <td>eV * 1,6021774232052327*10⁻¹⁹</td>
+                <td>eV * 3,826735086051347*10⁻²⁰</td>
+                <td id="nada"></td>
+                <td>eV * 1,6021774232052328*10⁻²² </td>
+                <td>eV * 3,826735086051347*10⁻²³</td>
+                <td>eV * 4,4504928422367573*10⁻²⁶</td>
+            </tr>
+
+            <tr>
+                <th>KILOJULIOS</th>
+                <td>kJ * 1000 </td>
+                <td>kJ * 238.85</td>
+                <td>kJ * 6,241506363094 * 10²¹</td>
+                <td id="nada"></td>
+                <td>kJ * 0.238846</td>
+                <td>kJ * 0.00027778</td>
+            </tr>
+            <tr>
+                <th>KILOCALORÍAS</th>
+                <td>kCal * 4186.8 </td>
+                <td>kCal * 1000 </td>
+                <td>kCal * 2,6131936951817053*10²²</td>
+                <td>kCal * 4.1868</td>
+                <td id="nada"></td>
+                <td>kCal * 0.001163</td>
+            </tr>
+
+
+            <tr>
+                <th>KILOVATIOS-HORA</th>
+                <td>kWh * 3600000</td>
+                <td>kWh * 859845.22785899</td>
+                <td>kWh * 2,2469421600000004*10²⁵</td>
+                <td>kWh * 3600</td>
+                <td>kWh * 859.845</td>
+                <td id="nada"></td>
+            </tr>
+
+        </table>
+
+
+        <script src="js/conversor.js">
+           
+
+           
+             
+
+
+
+
+
+
+
+
+            
+        </script>
+</body>
+
+</html>

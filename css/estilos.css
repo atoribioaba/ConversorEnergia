@@ -1,0 +1,174 @@
+/*GENERAL*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #023543;
+}
+
+html {
+    width: auto;
+    height: auto;
+}
+
+/*TÍTULO*/
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',cursive;
+    color:white;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;   
+}
+form>p {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+form>input, form>select{
+    text-align: center;
+}
+
+
+
+/* BOTONES */
+
+#limpiar, 
+#invertir,
+#convertir {
+    border: 3px solid;
+    font-weight: 900;
+    font-size: 22px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#limpiar:hover,
+#invertir:hover,
+#convertir:hover {
+    font-size: 24px;
+} 
+
+
+#limpiar{
+    background-color: lightblue;
+    position: absolute;
+    margin-right: 25%;
+    margin-top: 0;
+    
+}
+
+#invertir{
+    background-color: lightyellow;
+}
+#convertir{
+    background-color: lightgreen;
+}
+
+
+/* INPUT DONDE VOY A PONER EL VALOR*/
+#valor {
+    background-color: lightgoldenrodyellow;
+    font-size: 25px;
+    border: 5px solid;
+    height: 50px;
+    border-radius: 100px 100px;
+    margin-bottom: 10px;
+}
+
+/*SELECT*/
+
+#origen,
+#destino {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#origen {
+    border: 3px solid;
+    background-color: lightsalmon;
+}
+
+#destino {
+    border: 3px solid;
+    background-color: bisque;
+}
+
+option{
+    font-weight: 900;
+}
+
+
+/*PÁRRAFO VACÍO RESULTADO*/
+
+#resultado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 900;
+    color: #aaa;
+}
+
+/*Párrafo Vacío que será la barra que separe*/
+#barra {
+    margin-bottom: 1%;
+    border-bottom: 5px solid;
+}
+
+/*TABLA*/
+
+table {
+    color: white;
+    font-family: Arial;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #003524;
+    width: 100%;
+
+}
+/*TÍTULO DE LA TABLA*/
+caption {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',cursive;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 1%;
+}
+
+
+/*FILAS Y COLUMNAS*/
+
+th {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+tr,
+th,
+td {
+    color: white;
+    border: 5px solid white;
+    padding: 10px;
+}
+td {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Las celdas en las que el coinicidían la unidad de la fila y columna, puesto que es el mismo valor no hace falta poner fórmula*/
+#nada {
+    background-color: grey;
+}
+
+
+
